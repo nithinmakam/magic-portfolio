@@ -65,6 +65,11 @@ export default function About(
             display: about.technical.display,
             items: about.technical.skills.map(skill => skill.title)
         },
+        { 
+            title: about.certification.title,
+            display: about.certification.display,
+            items: about.certification.skills.map(skill => skill.title)
+        },
     ]
     return (
         <Flex
@@ -120,7 +125,7 @@ export default function About(
                             <Icon
                                 onBackground="accent-weak"
                                 name="globe"/>
-                            {person.location}
+                            INDIA/Hyderabad
                         </Flex>
                         { person.languages.length > 0 && (
                             <Flex
@@ -327,13 +332,65 @@ export default function About(
                             <Heading
                                 as="h2"
                                 id={about.technical.title}
-                                variant="display-strong-s" marginBottom="40">
+                                variant="display-strong-s" marginBottom="m">
                                 {about.technical.title}
                             </Heading>
                             <Flex
                                 direction="column"
-                                fillWidth gap="l">
+                                fillWidth gap="l" marginBottom="40">
                                 {about.technical.skills.map((skill, index) => (
+                                    <Flex
+                                        key={`${skill}-${index}`}
+                                        fillWidth gap="4"
+                                        direction="column">
+                                        <Text
+                                            variant="heading-strong-l">
+                                            {skill.title}
+                                        </Text>
+                                        <Text
+                                            variant="body-default-m"
+                                            onBackground="neutral-weak">
+                                            {skill.description}
+                                        </Text>
+                                        {skill.images && skill.images.length > 0 && (
+                                            <Flex
+                                                fillWidth paddingTop="m" gap="12"
+                                                wrap>
+                                                {skill.images.map((image, index) => (
+                                                    <Flex
+                                                        key={index}
+                                                        border="neutral-medium"
+                                                        borderStyle="solid-1"
+                                                        radius="m"
+                                                        minWidth={image.width} height={image.height}>
+                                                        <SmartImage
+                                                            enlarge
+                                                            radius="m"
+                                                            sizes={image.width.toString()}
+                                                            alt={image.alt}
+                                                            src={image.src}/>
+                                                    </Flex>
+                                                ))}
+                                            </Flex>
+                                        )}
+                                    </Flex>
+                                ))}
+                            </Flex>
+                        </>
+                    )}
+
+                    { about.certification.display && (
+                        <>
+                            <Heading
+                                as="h2"
+                                id={about.certification.title}
+                                variant="display-strong-s" marginBottom="40">
+                                {about.certification.title}
+                            </Heading>
+                            <Flex
+                                direction="column"
+                                fillWidth gap="l">
+                                {about.certification.skills.map((skill, index) => (
                                     <Flex
                                         key={`${skill}-${index}`}
                                         fillWidth gap="4"

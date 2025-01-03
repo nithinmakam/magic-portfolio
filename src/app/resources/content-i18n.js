@@ -8,7 +8,7 @@ const createI18nContent = (t) => {
             return `${this.firstName} ${this.lastName}`;
         },
         role:      t("person.role"),
-        avatar:    '/images/avatar.jpg',
+        avatar:    '/images/avatar.jpeg',
         location:  'Asia/Jakarta',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
         languages: ['English', 'Bahasa']  // optional: Leave the array empty if you don't want to display languages
     }
@@ -55,7 +55,7 @@ const createI18nContent = (t) => {
     const about = {
         label: t("about.label"),
         title: t("about.title"),
-        description: t("about.description", {name: person.name, role: person.role, location: person.location}),
+        description: t("about.description", {name: person.name, role: person.role, location: INDIA/Hyderabad}),
         tableOfContent: {
             display: true,
             subItems: true

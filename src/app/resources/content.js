@@ -7,9 +7,9 @@ const person = {
         return `${this.firstName} ${this.lastName}`;
     },
     role:      'Software Developer',
-    avatar:    '/images/avatar.jpg',
+    avatar:    '/images/avatar.jpeg',
     location:  'Asia/Kolkata',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-    languages: ['English', 'Bahasa']  // optional: Leave the array empty if you don't want to display languages
+    languages: ['English', 'Telugu']  // optional: Leave the array empty if you don't want to display languages
 }
 
 const newsletter = {
@@ -49,7 +49,7 @@ const home = {
 const about = {
     label: 'About',
     title: 'About me',
-    description: `Meet ${person.name}, ${person.role} from ${person.location}`,
+    description: `Meet ${person.name}, ${person.role} from INDIA/Hyderabad`,
     tableOfContent: {
         display: true,
         subItems: false
@@ -58,7 +58,7 @@ const about = {
         display: true
     },
     calendar: {
-        display: true,
+        display: false,
         link: 'https://cal.com'
     },
     intro: {
@@ -75,7 +75,9 @@ const about = {
                 timeframe: "Aug,2022 - Present",
                 role: "Software Developer",
                 achievements: [
-                    <>Developed and implemented critical requirements, ensuring timely and efficient delivery.</>,
+                    <>Developing and implementing requirements for Distribute application, ensuring timely and efficient delivery.</>,
+                    <>Quickly grasped the Packager application and delivered critical features within tight deadlines, taking full ownership of the application alongside a colleague.</>,
+                    <>Upgraded all our project java services from Java 11 to 17 and Springboot 2.1 to 2.5.14</>,
                     <>Best Performer Award in 2023.</>,
                     <>Received volunteering award for teaching Computers to grade 8 students.</>
                 ],
@@ -89,12 +91,23 @@ const about = {
                 ]
             },
             {
-                company: 'Creativ3',
-                timeframe: '2018 - 2022',
-                role: 'Lead Designer',
+                company: 'Achala IT Solutions',
+                timeframe: 'Sep,2021 - Jul,2022',
+                role: 'Software Developer',
                 achievements: [
-                    <>Developed a design system that unified the brand across multiple platforms, improving design consistency by 40%.</>,
-                    <>Led a cross-functional team to launch a new product line, contributing to a 15% increase in overall company revenue.</>
+                    <>Developed and Completed Attendace application for EMRI client for various services</>,
+                    <>Developed and Completed Onboarding application for EMRI client and linked with Attendace application</>
+                ],
+                images: [ ]
+            },
+            {
+                company: 'Spoors Technology',
+                timeframe: 'Jun,2019 - Aug,2021',
+                role: 'Software Developer',
+                achievements: [
+                    <>Migrated client LNT codebase into a central application, enhancing performance and maintainability.</>,
+                    <>Implemented new features and added new Bureau for Mahindra client loan applications.</>,
+                    <>Contributed to a team that secured 2nd prize in a company-wide competition.</>
                 ],
                 images: [ ]
             }
@@ -105,12 +118,20 @@ const about = {
         title: 'Studies',
         institutions: [
             {
-                name: 'University of Jakarta',
-                description: <>Studied software engineering.</>,
+                name: 'IIIT Bangalore',
+                description: <>PG Diploma in Software Development.</>,
             },
             {
-                name: 'Build the Future',
-                description: <>Studied online marketing and personal branding.</>,
+                name: 'VNR VJIET',
+                description: <>B.Tech in ECE.</>,
+            },
+            {
+                name: 'Sri Chaitanya Jr College',
+                description: <>Intermediate(M.P.C).</>,
+            },
+            {
+                name: 'Triveni Talent School',
+                description: <>SSC.</>,
             }
         ]
     },
@@ -119,36 +140,56 @@ const about = {
         title: 'Technical skills',
         skills: [
             {
-                title: 'Figma',
-                description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
-                // optional: leave the array empty if you don't want to display images
-                images: [
-                    {
-                        src: '/images/projects/project-01/cover-02.jpg',
-                        alt: 'Project image',
-                        width: 16,
-                        height: 9
-                    },
-                    {
-                        src: '/images/projects/project-01/cover-03.jpg',
-                        alt: 'Project image',
-                        width: 16,
-                        height: 9
-                    },
-                ]
+                title: 'Programming Languages',
+                description: <>Java, Python, SQL, jQuery.</>,
+                images: []
             },
             {
-                title: 'Next.js',
-                description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
+                title: 'Databases',
+                description: <>MySQL, PostgreSQL, MongoDB.</>,
                 // optional: leave the array empty if you don't want to display images
-                images: [
-                    {
-                        src: '/images/projects/project-01/cover-04.jpg',
-                        alt: 'Project image',
-                        width: 16,
-                        height: 9
-                    },
-                ]
+                images: []
+            },
+            {
+                title: 'Frameworks',
+                description: <>Spring Boot, Spring MVC.</>,
+                // optional: leave the array empty if you don't want to display images
+                images: []
+            },
+            {
+                title: 'Cloud',
+                description: <>AWS, Azure, GCP.</>,
+                // optional: leave the array empty if you don't want to display images
+                images: []
+            },
+            {
+                title: 'Tools/Technologies',
+                description: <>Microservices, Git, Github, Gitlab.</>,
+                // optional: leave the array empty if you don't want to display images
+                images: []
+            }
+        ]
+    },
+    certification: {
+        display: true, // set to false to hide this section
+        title: 'Certifications',
+        skills: [
+            {
+                title: 'AWS',
+                description: <>AWS Cloud Practitioner.</>,
+                images: []
+            },
+            {
+                title: 'Azure',
+                description: <>Azure Fundamentals(AZ-900), Azure Developer Associate(AZ-204).</>,
+                // optional: leave the array empty if you don't want to display images
+                images: []
+            },
+            {
+                title: 'GCP',
+                description: <>Google Cloud Digital Leader.</>,
+                // optional: leave the array empty if you don't want to display images
+                images: []
             }
         ]
     }
