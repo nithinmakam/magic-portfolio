@@ -33,7 +33,7 @@ const TimeDisplay: React.FC<TimeDisplayProps> = ({ timeZone, locale = 'en-GB' })
                 hour12: true,
             };
             const timeString = new Intl.DateTimeFormat(locale, options).format(now);
-            setCurrentTime(timeString);
+            setCurrentTime(timeString.toLocaleUpperCase());
         };
 
         updateTime();

@@ -176,20 +176,47 @@ const about = {
         skills: [
             {
                 title: 'AWS',
-                description: <>AWS Cloud Practitioner.</>,
-                images: []
+                description: <><a href="https://www.credly.com/badges/cebecea3-ef34-4a47-9b8b-235b74262b9e/public_url">AWS Cloud Practitioner</a></>,
+                images: [ // optional: leave the array empty if you don't want to display images
+                    {
+                        src: '/images/certifications/aws-ccp.png',
+                        alt: 'AWS Cloud Practitioner',
+                        width: 9,
+                        height: 9
+                    }
+                ]
             },
             {
                 title: 'Azure',
-                description: <>Azure Fundamentals(AZ-900), Azure Developer Associate(AZ-204).</>,
+                description: <><a href="https://www.credly.com/badges/77c32c98-6e76-4869-8b20-f71d68934b02/public_url">Azure Fundamentals(AZ-900)</a>, <a href="https://www.credly.com/badges/00a7e67e-a5a5-452e-abb8-51cd30ae2758/public_url">Azure Developer Associate(AZ-204)</a></>,
                 // optional: leave the array empty if you don't want to display images
-                images: []
+                images: [
+                    {
+                        src: '/images/certifications/azure-fundamentals.png',
+                        alt: 'Azure Fundamentals(AZ-900)',
+                        width: 9,
+                        height: 9
+                    },
+                    {
+                        src: '/images/certifications/azure-da.png',
+                        alt: 'Azure Developer Associate(AZ-204)',
+                        width: 9,
+                        height: 9
+                    }
+                ]
             },
             {
                 title: 'GCP',
-                description: <>Google Cloud Digital Leader.</>,
+                description: <><a href="https://www.credly.com/badges/cc62b721-26b9-4849-b83b-69b4cf0573cc/public_url">Google Cloud Digital Leader</a></>,
                 // optional: leave the array empty if you don't want to display images
-                images: []
+                images: [
+                    {
+                        src: '/images/certifications/gcp-dcl.png',
+                        alt: 'Google Cloud Digital Leader',
+                        width: 9,
+                        height: 9
+                    }
+                ]
             }
         ]
     }
