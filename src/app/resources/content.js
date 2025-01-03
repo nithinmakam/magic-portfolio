@@ -176,7 +176,7 @@ const about = {
         skills: [
             {
                 title: 'AWS',
-                description: <><a href="https://www.credly.com/badges/cebecea3-ef34-4a47-9b8b-235b74262b9e/public_url">AWS Cloud Practitioner</a></>,
+                description: <><a href="https://www.credly.com/badges/cebecea3-ef34-4a47-9b8b-235b74262b9e/public_url" target="_blank" rel="noopener noreferrer">AWS Cloud Practitioner</a></>,
                 images: [ // optional: leave the array empty if you don't want to display images
                     {
                         src: '/images/certifications/aws-ccp.png',
@@ -188,7 +188,7 @@ const about = {
             },
             {
                 title: 'Azure',
-                description: <><a href="https://www.credly.com/badges/77c32c98-6e76-4869-8b20-f71d68934b02/public_url">Azure Fundamentals(AZ-900)</a>, <a href="https://www.credly.com/badges/00a7e67e-a5a5-452e-abb8-51cd30ae2758/public_url">Azure Developer Associate(AZ-204)</a></>,
+                description: <><a href="https://www.credly.com/badges/77c32c98-6e76-4869-8b20-f71d68934b02/public_url" target="_blank" rel="noopener noreferrer">Azure Fundamentals(AZ-900)</a>, <a href="https://www.credly.com/badges/00a7e67e-a5a5-452e-abb8-51cd30ae2758/public_url" target="_blank" rel="noopener noreferrer">Azure Developer Associate(AZ-204)</a></>,
                 // optional: leave the array empty if you don't want to display images
                 images: [
                     {
@@ -207,7 +207,7 @@ const about = {
             },
             {
                 title: 'GCP',
-                description: <><a href="https://www.credly.com/badges/cc62b721-26b9-4849-b83b-69b4cf0573cc/public_url">Google Cloud Digital Leader</a></>,
+                description: <><a href="https://www.credly.com/badges/cc62b721-26b9-4849-b83b-69b4cf0573cc/public_url" target="_blank" rel="noopener noreferrer">Google Cloud Digital Leader</a></>,
                 // optional: leave the array empty if you don't want to display images
                 images: [
                     {
